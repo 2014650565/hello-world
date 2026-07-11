@@ -22,7 +22,13 @@ jobs:
                 python-version: "3.12"
 
 
-            #第三步 运行python脚本
-            - name: 运行test_github.py
-              run: python test_github.py
+            #第三步
+            - name: 安装依赖
+              run: pip install pytest
+
+            - name: 运行测试
+              run: pytest test_fuction -v -s
+
+
+
               
