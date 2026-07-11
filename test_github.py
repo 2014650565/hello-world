@@ -1,6 +1,6 @@
 def greet(name):
     """向指定用户打招呼"""
-    return f"Hello, {name}! 欢迎学习 Git 和 CI/CD。"
+    return f"Hello, {name}! 这是 main 分支的修改"
 
 
 def add(a, b):
