@@ -1,2 +1,20 @@
 # hello-world
+
 此存储库用于练习 GitHub 流
+
+## 功能说明
+
+本仓库用于学习 Git 分支管理、远程协作及 CI/CD 流水线。
+
+## 快速开始
+
+```bash
+git clone git@github.com:2014650565/hello-world.git
+cd hello-world
+```
+
+## 技术栈
+
+- Python 3
+- Git
+- GitHub Actions（计划中）
