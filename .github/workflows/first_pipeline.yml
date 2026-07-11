@@ -21,7 +21,7 @@ jobs:
 
             #第三步
             - name: 安装依赖
-              run: pip install pytest
+              run: pip install pytest requests
 
             - name: 运行测试
               run: pytest test_fuction.py -v -s
