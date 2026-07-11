@@ -28,3 +28,22 @@ jobs:
 
             - name: 运行测试
               run: pytest test_fuction.py -v -s
+
+
+        deploy:
+            needs: run-test
+            runs-on: ubuntu-latest
+            permissions:
+               pages: write
+               id-token: write
+            steps:
+             - name: 拉取代码
+               uses: actions/checkout@v4
+
+             - name: 上传页面
+               uses: actions/upload-pages-artifact@v3
+               with:
+                 path: .
+
+             - name: 部署到 GitHub Pages
+               uses: actions/deploy-pages@v4
