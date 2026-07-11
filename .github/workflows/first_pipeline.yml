@@ -24,5 +24,5 @@ jobs:
 
             #第三步 运行python脚本
             - name: 运行test_github.py
-              runs: python test_github.py
+              run: python test_github.py
               
