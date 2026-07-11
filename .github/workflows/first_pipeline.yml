@@ -1,4 +1,4 @@
-# .github/worflows/first_pipeline.yml
+# .github/workflows/first_pipeline.yml
 
 
 name: 我的第一条流水线
@@ -27,7 +27,7 @@ jobs:
               run: pip install pytest
 
             - name: 运行测试
-              run: pytest test_fuction -v -s
+              run: pytest test_fuction.py -v -s
 
 
 
