@@ -1,7 +1,7 @@
 # hello-world
 
 此存储库用于练习 GitHub 流
-![流水线状态](https://github.com/账号名/仓库名/actions/workflows/工作流文件名/badge.svg)
+![流水线状态](https://github.com/2014610565/hello-world/actions/workflows/first_pipeline.yml/badge.svg)
 ## 功能说明
 
 本仓库用于学习 Git 分支管理、远程协作及 CI/CD 流水线。
