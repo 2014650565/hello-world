@@ -1,0 +1,28 @@
+# .github/worflows/first_pipeline.yml
+
+
+name: 我的第一条流水线
+on:
+    push:
+    workflow_dispatch:
+
+
+jobs:
+    run-test:
+        runs-on: ubuntu-latest
+        steps:
+            #第一步拉取仓库代码
+            - name: 拉取代码
+              uses: actions/checkout@v4
+            
+            #第二部设置python环境
+            - name: 设置 Python
+              uses: actions/setup-python@v5
+              with:
+                python-version: "3.12"
+
+
+            #第三步 运行python脚本
+            - name: 运行test_github.py
+              runs: python test_github.py
+              
