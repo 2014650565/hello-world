@@ -1,6 +1,7 @@
 name: myFirst try
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   tests:
