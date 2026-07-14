@@ -16,7 +16,7 @@ jobs:
           python-version: '3.12'
 
       - name: 安装依赖
-        run: pip install pytest
+        run: pip install pytest requests
 
       - name: 运行pytest
         run: pytest
