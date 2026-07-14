@@ -1,0 +1,25 @@
+name: myFirst try
+on:
+  push:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v6
+
+
+      - name: 安装python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+
+      - name: 安装依赖
+        run: pip install pytest
+
+      
+
+      - name: 运行pytest
+        run: pytest
